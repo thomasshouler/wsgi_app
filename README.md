@@ -11,6 +11,6 @@ Referenced https://github.com/GrahamDumpleton/mod_wsgi/blob/master/win32/README.
 
 The  the latest windows binaries (as of today) are downloaded from here: https://github.com/GrahamDumpleton/mod_wsgi/releases/tag/4.4.6
 
-The appropriate mod_wsgi.so for my environment is then taken from "mod_wsgi-windows-4.4.6\Apache22-win32-VC9\modules\mod_wsgi-py27-VC9.so" and then referenced in my httpd.conf file via `LoadModule wsgi_module modules/mod_wsgi-py27-VC9.so`.
+The appropriate mod_wsgi.so for my environment is then taken from "mod_wsgi-windows-4.4.6\Apache22-win32-VC9\modules\mod_wsgi-py27-VC9.so" and saved locally in "C:\Apache22\modules" where it is referenced in httpd.conf via `LoadModule wsgi_module modules/mod_wsgi-py27-VC9.so`.
 
-Ran apache, and the application displays text in the browser as expeceted.
+Run apache, and the application displays text in the browser as expeceted.
